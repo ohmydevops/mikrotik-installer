@@ -3,18 +3,22 @@
 set -e
 
 WINBOX_URL="https://download.mikrotik.com/routeros/winbox/4.0beta26/WinBox_Linux.zip"
-ICON_URL="https://oruggtnet.is/wp-content/uploads/2025/02/MT_Symbol_Line_Black-e1739222629826.png"
+ICON_URL="https://avatars.githubusercontent.com/u/126224041?s=200&v=4"
 INSTALL_DIR="$HOME/WinBox"
 DESKTOP_FILE="$HOME/.local/share/applications/winbox.desktop"
+ZIP_FILE="$INSTALL_DIR/WinBox_Linux.zip"
 ICON_PATH="$INSTALL_DIR/logo.png"
 
 mkdir -p "$INSTALL_DIR"
 
 echo "Downloading WinBox..."
-wget -q --show-progress -O "$INSTALL_DIR/WinBox_Linux.zip" "$WINBOX_URL"
+wget -q --show-progress -O "$ZIP_FILE" "$WINBOX_URL"
 
 echo "Extracting..."
-unzip -o "$INSTALL_DIR/WinBox_Linux.zip" -d "$INSTALL_DIR"
+unzip -o "$ZIP_FILE" -d "$INSTALL_DIR"
+
+echo "Removing ZIP file..."
+rm -f "$ZIP_FILE"
 
 echo "Downloading icon..."
 wget -q -O "$ICON_PATH" "$ICON_URL"
