@@ -6,11 +6,11 @@ It also creates a desktop shortcut with the MikroTik icon.
 ## Install
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/ohmydevops/mikrotik-installer/refs/heads/master/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/ohmydevops/winbox-installer/refs/heads/master/install.sh)
 ```
 
 ## Uninstall
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/ohmydevops/mikrotik-installer/refs/heads/master/uninstall.sh)
+bash <(curl -s https://raw.githubusercontent.com/ohmydevops/winbox-installer/refs/heads/master/uninstall.sh)
 ```
