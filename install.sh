@@ -9,6 +9,11 @@ DESKTOP_FILE="$HOME/.local/share/applications/winbox.desktop"
 ZIP_FILE="$INSTALL_DIR/WinBox_Linux.zip"
 ICON_PATH="$INSTALL_DIR/logo.png"
 
+if [ -f "$INSTALL_DIR/WinBox" ]; then
+  echo "WinBox is already installed in $INSTALL_DIR"
+  exit 0
+fi
+
 mkdir -p "$INSTALL_DIR"
 
 echo "Downloading WinBox..."
