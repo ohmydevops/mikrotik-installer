@@ -3,7 +3,7 @@
 set -e
 
 WINBOX_URL="https://download.mikrotik.com/routeros/winbox/4.0beta26/WinBox_Linux.zip"
-ICON_URL="https://raw.githubusercontent.com/ohmydevops/mikrotik-installer/refs/heads/master/logo.png"
+ICON_URL="https://raw.githubusercontent.com/ohmydevops/mikrotik-installer/refs/heads/master/winbox.png"
 INSTALL_DIR="$HOME/WinBox"
 DESKTOP_FILE="$HOME/.local/share/applications/winbox.desktop"
 ZIP_FILE="$INSTALL_DIR/WinBox_Linux.zip"
